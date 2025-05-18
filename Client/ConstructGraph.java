@@ -1,8 +1,10 @@
 package client;
 
-import Administrator.AirPortsCodes;
 import java.util.ArrayList;
 import java.util.List;
+
+import administrator.AirPortsCodes;
+
 import java.util.Arrays;
 import java.sql.*;
 import java.time.LocalDateTime;

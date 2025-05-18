@@ -1,4 +1,4 @@
-package Administrator;
+package administrator;
 
 import java.util.HashMap;
 
