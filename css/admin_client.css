@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://static.vecteezy.com/system/resources/previews/036/034/265/large_2x/ai-generated-terminal-airplane-airport-background-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  width: 100vw;
+  background: rgba(0, 114, 255, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 56px;
+}
+.navbar li {
+  margin-left: 32px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #ffe082;
+}
+
+.admin-container {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 800px;
+  width: 98%;
+  margin-top: 70px; /* To avoid overlap with navbar */
+}
+h2 {
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eef1f5;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.02);
+  background-color: #dde3eb;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 24px;
+  align-items: end;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+button[type="submit"] {
+  grid-column: 1 / -1;
+  margin-top: 20px;
+}
+@media (max-width: 900px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.output-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f9ff;
+  border: 2px dashed #66a6ff;
+  border-radius: 10px;
+  min-height: 40px;
+  color: #333;
+  font-weight: 500;
+  white-space: pre-line;
+}
