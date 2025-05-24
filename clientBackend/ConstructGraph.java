@@ -1,4 +1,4 @@
-package client;
+package clientBackend;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +21,10 @@ public class ConstructGraph {
         codes = new AirPortsCodes();
         ports = codes.airPorts.length;
         adj = new ArrayList<>(ports);
+
+        for (int i = 0; i < ports; i++) {
+            adj.add(new ArrayList<>());
+        }
     }
 
     private void addEdge(int src, int dst, double ecoCost, double busiCost, double fstCost, double duration, double flightId){
