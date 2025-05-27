@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suspend Flight - OptiFly</title>
+  <link rel="stylesheet" href="../css/add_client.css">
+</head>
+<body>
+  <!-- Navigation Bar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Route Optimizer</a></li>
+      <li><a href="client_menu.html">Flight Management</a></li>
+      <li><a href="../../admin/client.html">Flight Administration</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+  </nav>
+  <!-- Navigation Bar End -->
+  <div class="form-container">
+    <h2>Suspend Flight</h2>
+    <form id="suspendFlightForm" onsubmit="suspendFlight(event)">
+      <label for="flightId">Flight ID</label>
+      <input type="text" id="flightId" name="flightId" required>
+      <label for="reason">Reason for Suspension</label>
+      <input type="text" id="reason" name="reason" required>
+      <button type="submit">Suspend Flight</button>
+    </form>
+    <div class="output-box" id="output"></div>
+    <button onclick="location.href='client_menu.html'" style="margin-top:10px;">Back to Menu</button>
+  </div>
+  <script>
+    function suspendFlight(event) {
+      event.preventDefault();
+      const flightId = document.getElementById('flightId').value;
+      const reason = document.getElementById('reason').value;
+      if (!flightId || !reason) {
+        document.getElementById('output').innerText = 'Please enter both Flight ID and reason.';
+        return;
+      }
+      // Placeholder: Replace with actual backend call
+      document.getElementById('output').innerText = `Flight ${flightId} has been suspended.\nReason: ${reason}`;
+    }
+  </script>
+</body>
+</html>

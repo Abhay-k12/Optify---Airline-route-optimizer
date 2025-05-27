@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Flights - OptiFly</title>
+  <link rel="stylesheet" href="../css/view_flights.css">
+</head>
+<body>
+  <!-- Navigation Bar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Route Optimizer</a></li>
+      <li><a href="flight_menu.html">Flight Management</a></li>
+      <li><a href="../../admin/client.html">Flight Administration</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+  </nav>
+  <!-- Navigation Bar End -->
+  <main>
+    <div class="view-container" style="background: rgba(255,255,255,0.85); border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.13); padding: 36px 24px 28px 24px; max-width: 900px; width: 98%; margin: 60px auto 0 auto;">
+      <h2 style="text-align:center; background: linear-gradient(to right, #4facfe, #00f2fe); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">All Flights</h2>
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:1.08rem; background:rgba(255,255,255,0.97);">
+          <tr style="background: linear-gradient(to right, #00c6ff, #0072ff); color:white;">
+            <th>Flight ID</th><th>Source</th><th>Destination</th><th>Date</th><th>Landing</th><th>Economy</th><th>Business</th><th>First</th>
+          </tr>
+          <tr><td>FL001</td><td>Delhi</td><td>Mumbai</td><td>2025-05-18</td><td>2025-05-18</td><td>5000</td><td>10000</td><td>20000</td></tr>
+          <tr><td>FL002</td><td>Mumbai</td><td>Bangalore</td><td>2025-05-19</td><td>2025-05-19</td><td>4500</td><td>9000</td><td>18000</td></tr>
+          <tr><td>FL003</td><td>Delhi</td><td>Chennai</td><td>2025-05-20</td><td>2025-05-20</td><td>6000</td><td>12000</td><td>24000</td></tr>
+          <!-- Add more rows dynamically from backend in real project -->
+        </table>
+      </div>
+      <button class="nav-btn" onclick="location.href='flight_menu.html'" style="margin-top:20px;">Back to Menu</button>
+    </div>
+  </main>
+  <script src="../js/view_flights.js"></script>
+</body>
+</html>
