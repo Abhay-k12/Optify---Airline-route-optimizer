@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptiFly - Air Route Optimization</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar li {
+      display: inline;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #00c6ff;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(4px);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+      margin-top: 80px;
+    }
+    h1 {
+      text-align: center;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    input:focus, select:focus, button:focus {
+      outline: none;
+      transform: scale(1.02);
+    }
+    input, select {
+      background-color: #eef1f5;
+    }
+    select:hover, input:hover {
+      background-color: #dde3eb;
+    }
+    button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+    }
+    .output-box {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f1f9ff;
+      border: 2px dashed #6bff66;
+      border-radius: 10px;
+      min-height: 60px;
+      color: #333;
+      font-weight: 500;
+      white-space: pre-line;
+    }
+    .nav-btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .nav-btn:hover {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Route Optimizer</a></li>
+      <li><a href="client/client_menu.html">Flight Management</a></li>
+      <li><a href="admin/client.html">Flight Administration</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <!-- Navigation Bar End -->
+  <div class="container">
+    <h1>OptiFly - Air Route Optimization</h1>
+    <input type="text" id="source" placeholder="Enter Source Airport">
+    <input type="text" id="destination" placeholder="Enter Destination Airport">
+    <select id="priority">
+      <option value="cost">Prioritize Cost</option>
+      <option value="time">Prioritize Time</option>
+      <option value="both">Balance Cost and Time</option>
+    </select>
+    <button onclick="getOptimizedPath()">Get Optimized Path</button>
+    <div class="output-box" id="output"></div>
+    <button class="nav-btn" onclick="location.href='client/client_menu.html'">Go to Flight Management</button>
+  </div>
+  <script>
+    function getOptimizedPath() {
+      const source = document.getElementById('source').value;
+      const destination = document.getElementById('destination').value;
+      const priority = document.getElementById('priority').value;
+      if (!source || !destination) {
+        document.getElementById('output').innerText = 'Please enter both source and destination.';
+        return;
+      }
+      // Placeholder: Replace with actual API call to backend
+      document.getElementById('output').innerText =
+        `Fetching optimized route from ${source} to ${destination}\nPriority: ${priority}\n\n→ Sample Path: ${source} → XYZ → ${destination}`;
+    }
+  </script>
+</body>
+</html>
