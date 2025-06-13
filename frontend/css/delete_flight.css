@@ -1,1 +1,103 @@
-/* ...existing code... */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #00c6ff;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 95%;
+  margin: 100px auto 0 auto;
+}
+h2 {
+  text-align: center;
+  background: linear-gradient(to right, #ff5858, #f09819);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #ff5858;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #dde3eb;
+  border-radius: 8px;
+  background-color: #eef1f5;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+input:focus {
+  outline: none;
+  background-color: #fde2e2;
+  border-color: #ff5858;
+}
+button[type="submit"], button[type="button"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  background: linear-gradient(to right, #ff5858, #f09819);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+button[type="submit"]:hover, button[type="button"]:hover {
+  background: linear-gradient(to right, #f09819, #ff5858);
+}
+.output-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff6f0;
+  border: 2px dashed #ffb366;
+  border-radius: 10px;
+  min-height: 60px;
+  color: #333;
+  font-weight: 500;
+  white-space: pre-line;
+}
