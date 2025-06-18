@@ -36,74 +36,70 @@ body {
   color: #00c6ff;
 }
 
-.about-container {
+.form-container {
   background: rgba(255,255,255,0.95);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   padding: 40px 30px;
-  max-width: 700px;
+  max-width: 500px;
   width: 95%;
   margin: 100px auto 0 auto;
 }
-h1 {
+h2 {
   text-align: center;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #43cea2, #185a9d);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-h2 {
-  color: #0072ff;
-  margin-top: 30px;
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #185a9d;
 }
-ul {
-  margin-left: 20px;
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #dde3eb;
+  border-radius: 8px;
+  background-color: #eef1f5;
+  transition: background 0.3s ease, border 0.3s ease;
 }
-.about-features li {
-  transition: background 0.3s, color 0.3s, padding 0.3s;
-  cursor: pointer;
-  border-radius: 6px;
-  padding: 8px 12px;
+input:focus {
+  outline: none;
+  background-color: #dde3eb;
+  border-color: #43cea2;
 }
-.about-features li:hover, .about-features li.expanded {
-  background: #e3f0ff;
-  color: #0072ff;
-  padding-left: 24px;
-}
-.nav-btn {
+button[type="submit"], button[type="button"] {
   width: 100%;
   padding: 12px;
-  margin-top: 30px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  margin-top: 18px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
   color: white;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
-  position: relative;
-  overflow: hidden;
+  transition: background 0.3s ease;
 }
-.nav-btn:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+button[type="submit"]:hover, button[type="button"]:hover {
+  background: linear-gradient(to right, #185a9d, #43cea2);
 }
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(0,198,255,0.3);
-  transform: scale(0);
-  animation: ripple-effect 0.6s linear;
-  pointer-events: none;
-  width: 100px;
-  height: 100px;
-  left: 0;
-  top: 0;
-}
-@keyframes ripple-effect {
-  to {
-    transform: scale(2.5);
-    opacity: 0;
-  }
+.output-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f9ff;
+  border: 2px dashed #43cea2;
+  border-radius: 10px;
+  min-height: 60px;
+  color: #333;
+  font-weight: 500;
+  white-space: pre-line;
 }

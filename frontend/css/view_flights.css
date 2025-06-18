@@ -1,3 +1,4 @@
+/* ...existing code... */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,46 +37,49 @@ body {
   color: #00c6ff;
 }
 
-.about-container {
-  background: rgba(255,255,255,0.95);
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  padding: 40px 30px;
-  max-width: 700px;
-  width: 95%;
-  margin: 100px auto 0 auto;
+.view-container {
+  background: rgba(255,255,255,0.97);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  padding: 36px 24px 28px 24px;
+  max-width: 900px;
+  width: 98%;
+  margin: 60px auto 0 auto;
 }
-h1 {
+h2 {
   text-align: center;
   background: linear-gradient(to right, #4facfe, #00f2fe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-h2 {
-  color: #0072ff;
-  margin-top: 30px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.08rem;
+  background: rgba(255,255,255,0.97);
 }
-ul {
-  margin-left: 20px;
+th, td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #e0eafc;
 }
-.about-features li {
-  transition: background 0.3s, color 0.3s, padding 0.3s;
-  cursor: pointer;
-  border-radius: 6px;
-  padding: 8px 12px;
+th {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
 }
-.about-features li:hover, .about-features li.expanded {
-  background: #e3f0ff;
-  color: #0072ff;
-  padding-left: 24px;
+tr:nth-child(even) {
+  background-color: #f6faff;
+}
+tr:hover {
+  background-color: #e3f0ff;
 }
 .nav-btn {
   width: 100%;
   padding: 12px;
-  margin-top: 30px;
+  margin-top: 20px;
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: white;
   font-weight: bold;
@@ -83,27 +87,8 @@ ul {
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
-  position: relative;
-  overflow: hidden;
+  transition: background 0.3s ease;
 }
 .nav-btn:hover {
   background: linear-gradient(to right, #0072ff, #00c6ff);
-}
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(0,198,255,0.3);
-  transform: scale(0);
-  animation: ripple-effect 0.6s linear;
-  pointer-events: none;
-  width: 100px;
-  height: 100px;
-  left: 0;
-  top: 0;
-}
-@keyframes ripple-effect {
-  to {
-    transform: scale(2.5);
-    opacity: 0;
-  }
 }
