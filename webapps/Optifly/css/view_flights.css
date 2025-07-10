@@ -1,15 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-            url('../images/photo7.jpg') center center / cover no-repeat fixed;
-  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+            url('../images/photo6.jpg') center center / cover no-repeat fixed;
   min-height: 100vh;
 }
 
 .navbar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
   justify-content: center;
@@ -35,11 +34,11 @@ body {
   transition: color 0.3s ease;
 }
 .navbar a:hover {
-  color: #00c6ff;
+  color: #e67be0;
 }
 
 .form-container {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.9);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   padding: 40px 30px;
@@ -49,7 +48,7 @@ body {
 }
 h2 {
   text-align: center;
-  background: linear-gradient(to right, #ff5858, #f09819);
+  background: linear-gradient(to right, #d066e8, #f68ecb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,7 +59,7 @@ label {
   display: block;
   margin-top: 15px;
   font-weight: 500;
-  color: #ff5858;
+  color: #d066e8;
 }
 input[type="text"] {
   width: 100%;
@@ -73,14 +72,14 @@ input[type="text"] {
 }
 input:focus {
   outline: none;
-  background-color: #fde2e2;
-  border-color: #ff5858;
+  background-color: #fce2f3;
+  border-color: #d066e8;
 }
 button[type="submit"], button[type="button"] {
   width: 100%;
   padding: 12px;
   margin-top: 18px;
-  background: linear-gradient(to right, #ff5858, #f09819);
+  background: linear-gradient(to right, #d066e8, #f68ecb);
   color: white;
   font-weight: bold;
   border: none;
@@ -90,13 +89,13 @@ button[type="submit"], button[type="button"] {
   transition: background 0.3s ease;
 }
 button[type="submit"]:hover, button[type="button"]:hover {
-  background: linear-gradient(to right, #f09819, #ff5858);
+  background: linear-gradient(to right, #f68ecb, #d066e8);
 }
 .output-box {
   margin-top: 20px;
   padding: 15px;
-  background-color: #fff6f0;
-  border: 2px dashed #ffb366;
+  background-color: #ffe6f7;
+  border: 2px dashed #f8a7df;
   border-radius: 10px;
   min-height: 60px;
   color: #333;

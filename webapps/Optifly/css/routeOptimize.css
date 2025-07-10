@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-            url('../images/photo4.jpg') center center / cover no-repeat fixed; 
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+            url('../images/photo11.jpg') center center / cover no-repeat fixed; 
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -10,11 +10,11 @@ body {
   align-items: center;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(4px);
   border-radius: 16px;
   padding: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   max-width: 500px;
   width: 90%;
 }
@@ -79,7 +79,7 @@ button:hover {
 }
 .navbar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
   justify-content: center;
