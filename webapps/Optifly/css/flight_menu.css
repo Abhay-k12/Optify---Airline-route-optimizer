@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-            url('../images/photo3.jpg') center center / cover no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+            url('../images/photo7.jpg') center center / cover no-repeat fixed;
   min-height: 100vh;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .menu-container {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.8);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   padding: 40px 30px;
