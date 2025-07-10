@@ -38,7 +38,7 @@ body {
 }
 
 .menu-container {
-  background: rgba(255,255,255,0.50);
+  background: rgba(255,255,255,0.7);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   padding: 40px 30px;
