@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About OptiFly - Airline Route Optimizer</title>
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Navigation Bar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Route Optimizer</a></li>
+      <li><a href="client\flight_menu.html">Client Management</a></li>
+      <li><a href="admin\client.html">Flight Administration</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>C:\Users\
+  </nav>
+  <!-- Navigation Bar End -->
+  <div class="about-container">
+    <h1>About OptiFly</h1>
+    <p><strong>OptiFly</strong> is an Airline Route Optimizer project designed to help users find the most efficient air routes based on cost, time, or a balance of both. It also provides administration and client management features for airline operations.</p>
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Route Optimization:</strong> Find optimized air routes between airports based on user-selected priorities.</li>
+      <li><strong>Flight Administration:</strong> Add and manage flight details, including costs for different classes.</li>
+      <li><strong>Client Management:</strong> Add, update, delete, and view client information.</li>
+      <li><strong>Modern UI:</strong> Clean, responsive, and easy-to-navigate frontend.</li>
+    </ul>
+    <h2>Project Structure</h2>
+    <ul>
+      <li><strong>frontend/</strong> - All user and admin HTML files
+        <ul>
+          <li><strong>index.html</strong> - Main user interface (route optimizer)</li>
+          <li><strong>admin/client.html</strong> - Flight administration</li>
+          <li><strong>client/</strong> - Client management (add, update, delete, view)</li>
+        </ul>
+      </li>
+      <li><strong>Administrator/</strong> - Java backend for airport and flight data</li>
+      <li><strong>client/</strong> - Java backend for graph and path optimization</li>
+    </ul>
+    <h2>How to Use</h2>
+    <ul>
+      <li>Open <strong>frontend/index.html</strong> in your browser for the main route optimizer.</li>
+      <li>Use the navigation buttons to access client management and flight administration.</li>
+      <li>For backend features, compile and run the Java files as described in the project documentation.</li>
+    </ul>
+    <button class="nav-btn" onclick="location.href='index.html'">Go to Route Optimizer</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    
+    <servlet>
+        <servlet-name>AddFlightServlet</servlet-name>
+        <servlet-class>servlets.AddFlightServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFlightServlet</servlet-name>
+        <url-pattern>/AddFlightServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFlightServlet</servlet-name>
+        <servlet-class>servlets.DeleteFlightServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFlightServlet</servlet-name>
+        <url-pattern>/DeleteFlightServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFlightServlet</servlet-name>
+        <servlet-class>servlets.UpdateFlightServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFlightServlet</servlet-name>
+        <url-pattern>/UpdateFlightServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OptimisePathServlet</servlet-name>
+        <servlet-class>servlets.OptimisePathServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OptimisePathServlet</servlet-name>
+        <url-pattern>/OptimisePathServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

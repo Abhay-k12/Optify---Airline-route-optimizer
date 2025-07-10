@@ -1,7 +1,8 @@
-/* ...existing code... */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('../images/photo7.jpg') center center / cover no-repeat fixed;
   background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
   min-height: 100vh;
 }
@@ -37,50 +38,49 @@ body {
   color: #00c6ff;
 }
 
-.view-container {
-  background: rgba(255,255,255,0.97);
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
-  padding: 36px 24px 28px 24px;
-  max-width: 900px;
-  width: 98%;
-  margin: 60px auto 0 auto;
+.form-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 95%;
+  margin: 100px auto 0 auto;
 }
 h2 {
   text-align: center;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #ff5858, #f09819);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
   margin-bottom: 20px;
 }
-table {
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #ff5858;
+}
+input[type="text"] {
   width: 100%;
-  border-collapse: collapse;
-  font-size: 1.08rem;
-  background: rgba(255,255,255,0.97);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #dde3eb;
+  border-radius: 8px;
+  background-color: #eef1f5;
+  transition: background 0.3s ease, border 0.3s ease;
 }
-th, td {
-  padding: 12px 8px;
-  text-align: center;
-  border-bottom: 1px solid #e0eafc;
+input:focus {
+  outline: none;
+  background-color: #fde2e2;
+  border-color: #ff5858;
 }
-th {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
-}
-tr:nth-child(even) {
-  background-color: #f6faff;
-}
-tr:hover {
-  background-color: #e3f0ff;
-}
-.nav-btn {
+button[type="submit"], button[type="button"] {
   width: 100%;
   padding: 12px;
-  margin-top: 20px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  margin-top: 18px;
+  background: linear-gradient(to right, #ff5858, #f09819);
   color: white;
   font-weight: bold;
   border: none;
@@ -89,6 +89,17 @@ tr:hover {
   font-size: 1rem;
   transition: background 0.3s ease;
 }
-.nav-btn:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+button[type="submit"]:hover, button[type="button"]:hover {
+  background: linear-gradient(to right, #f09819, #ff5858);
+}
+.output-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff6f0;
+  border: 2px dashed #ffb366;
+  border-radius: 10px;
+  min-height: 60px;
+  color: #333;
+  font-weight: 500;
+  white-space: pre-line;
 }
