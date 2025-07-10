@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('../images/photo6.jpg') center center / cover no-repeat fixed;
   background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
   min-height: 100vh;
 }
@@ -37,7 +39,7 @@ body {
 }
 
 .form-container {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.60);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   padding: 40px 30px;

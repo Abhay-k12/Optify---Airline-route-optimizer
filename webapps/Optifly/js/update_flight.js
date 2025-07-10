@@ -1,18 +1,29 @@
 function updateFlight(event) {
   event.preventDefault();
-  const flightId = document.getElementById('flightId').value;
-  const date = document.getElementById('date').value;
-  const landingDate = document.getElementById('landingDate').value;
-  const source = document.getElementById('source').value;
-  const destination = document.getElementById('destination').value;
-  const ecoCost = document.getElementById('ecoCost').value;
-  const businessCost = document.getElementById('businessCost').value;
-  const firstCost = document.getElementById('firstCost').value;
-  if (!date && !landingDate && !source && !destination && !ecoCost && !businessCost && !firstCost) {
-    document.getElementById('output').innerText = 'Please enter at least one field to update.';
-    return;
-  }
-  // Placeholder for backend integration
-  document.getElementById('output').innerText = `Flight Updated:\nID: ${flightId}\nDate: ${date}\nLanding: ${landingDate}\nSource: ${source}\nDestination: ${destination}\nEconomy: ${ecoCost}\nBusiness: ${businessCost}\nFirst: ${firstCost}`;
-  document.getElementById('updateFlightForm').reset();
+  const flightData = {
+    flightId: document.getElementById('flightId').value.trim(),
+    flightDate: document.getElementById('date').value.trim(),
+    landingDate: document.getElementById('landingDate').value.trim(),
+    source: document.getElementById('source').value.trim(),
+    destination: document.getElementById('destination').value.trim(),
+    ecoCost: document.getElementById('ecoCost').value.trim(),
+    businessCost: document.getElementById('businessCost').value.trim(),
+    firstCost: document.getElementById('firstCost').value.trim()
+  };
+
+  fetch("/Optifly/UpdateFlightServlet", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(flightData)
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("output").innerHTML = data;
+    document.getElementById("updateFlightForm").reset();
+  })
+  .catch(error => {
+    document.getElementById("output").innerHTML = "Error: " + error;
+  });
 }

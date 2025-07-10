@@ -10,8 +10,8 @@ function addFlight(event) {
     businessCost: document.getElementById('businessCost').value.trim(),
     firstCost: document.getElementById('firstCost').value.trim()
   }
-  
-  fetch("/OptiFly/AddFlightServlet",{
+  console.log("Button clicked.");
+  fetch("/Optifly/AddFlightServlet",{
     method: "POST",
     headers: {
       "Content-Type": "application/json"
