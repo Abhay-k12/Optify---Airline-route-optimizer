@@ -113,6 +113,7 @@ OptiFly/
 ├── 📂 admin/                          # 👨‍✈️ Admin-side HTML frontend pages
 ├── 📂 client/                         # 👩‍💼 Client-side HTML frontend pages
 ├── 📂 css/                            # 🎨 CSS files for styling the application
+├── 📂 database/                       # 🚀 Database file for dynamic graph generation
 ├── 📂 js/                             # ✨ JavaScript files for client-side interactivity
 ├── 📂 images/                         # 🖼️ Image assets for the frontend UI
 ├── 📄 index.html                      # 🏠 Home page of the application
